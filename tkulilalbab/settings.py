@@ -25,18 +25,23 @@ SECRET_KEY = 'm9wx2^v0!d^jqf9+v@z4%@mv3(1g$u(%pqvarmeg!ak2a069_c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','tkulilalbab.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'tkulilalbab',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sorl.thumbnail',
+    'phonenumber_field',
+    'tinymce',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -68,15 +73,21 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'tkulilalbab.wsgi.application'
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tkulilalbab',
+        'USER': 'root',
+        'PASSWORD': 'Alakazam1234!',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -103,9 +114,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'id'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Jakarta'
 
 USE_I18N = True
 
@@ -118,3 +129,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# LOGIN_REDIRECT_URL = 'admin/'
+LOGIN_URL = 'masuk'
+MEDIA_ROOT= os.path.join(BASE_DIR, 'MEDIA')
+MEDIA_URL= "/media/"
+
+
+
+DJANGORESIZED_DEFAULT_SIZE = [1920, 1080]
+DJANGORESIZED_DEFAULT_QUALITY = 75
+DJANGORESIZED_DEFAULT_KEEP_META = True
+DJANGORESIZED_DEFAULT_FORCE_FORMAT = 'JPEG'
+DJANGORESIZED_DEFAULT_FORMAT_EXTENSIONS = {'JPEG': ".jpg"}
+DJANGORESIZED_DEFAULT_NORMALIZE_ROTATION = True
