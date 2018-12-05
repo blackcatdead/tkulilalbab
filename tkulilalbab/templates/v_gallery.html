@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+
+{% block page %}
+Gallery Ulil Albab Yogyakarta - Play Group & Taman Kanak-Kanak
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+      <!-- Section Gallery -->
+      <section id="gallery" class="color-section">
+         <!-- svg triangle shape -->
+         <svg class="triangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="trianglePath1" d="M0 0 L50 100 L100 0 Z" />
+         </svg>
+         <div class="container">
+            <!-- Section heading -->
+            <div class="section-heading">
+               <h2>Our Gallery</h2>
+            </div>
+            <!-- Navigation -->
+            <div class="text-center col-md-12">
+               <ul class="nav nav-pills cat text-center" role="tablist" id="gallerytab">
+                  <li class="active"><a href="#" data-toggle="tab" data-filter="*">All</a>
+                  {% for pc in picture_categorys %}
+                  	<li><a href="#" data-toggle="tab" data-filter=".{{ pc.picture_category|slugify }}">{{ pc.picture_category }}</a></li>
+                  {% endfor %}
+               </ul>
+            </div>
+            <!-- Gallery -->
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="lightbox">
+                     <!-- Image 1 -->
+                     {% for picture in pictures %}
+                     	<div class="col-sm-6 col-md-6 col-lg-4 {{ picture.picture_category|slugify }}">
+	                        <div class="portfolio-item">
+	                           <div class="gallery-thumb">
+	                           		{% thumbnail picture.picture "330x330" crop="center" as im %}
+						    			<img class="img-responsive" src="{{ im.url }}" alt="">
+						    		{% endthumbnail %}
+	                              
+	                              <span class="overlay-mask"></span>
+	                              <a href="{{ picture.picture.url }}" data-gal="prettyPhoto[gallery]" class="link centered" title="You can add caption to pictures.">
+	                              <i class="fa fa-expand"></i></a>
+	                           </div>
+	                        </div>
+	                     </div>
+
+                     {% endfor %}
+                     
+                    
+                  </div>
+                  <!-- /lightbox-->
+               </div>
+               <!-- /col-md-12-->
+            </div>
+            <!-- /row -->
+         </div>
+         <!-- /container -->
+      </section>
+      <!-- Section ends -->
+
+
+<!-- Section Contact -->
+<section id="kontak" class="color-section" style="display: none; ">
+   <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+         <!-- Section heading -->
+         <div class="section-heading">
+            <h2>Hubungi Kami</h2>
+         </div>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 text-center">
+         <h4>Informasi</h4>  
+         <!-- contact info -->         
+         <div class="contact-info">
+         <p><i class="flaticon-back"></i><a href="mailto:youremailaddress">tkulilalbabyogya@gmail.com</a></p>
+     <p><i class="flaticon-back"></i><a href="mailto:youremailaddress">tkulilalbabyogyakarta@gmail.com</a></p>
+    <p><i class="fa fa-phone margin-icon"></i>Tlp, SMS & WhattsApp: 0813 2758 4440</p>
+   </div>
+            <!-- address info -->
+            <p>Jl. KH. Ali Maksum Km 2, Pandes, Panggungharjo, Sewon, Bantul, Yogyakarta 55188</p>
+          <!-- Map -->
+          <div id="map-canvas"></div>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-lg-7 col-lg-offset-1">
+         <h4>Tulis Pesan</h4>
+  <!-- Form Starts -->
+         <div id="contact_form">
+            <div class="form-group">
+               <input type="text" name="name" class="form-control input-field" placeholder="Nama" required="">                    
+               <input type="email" name="email" class="form-control input-field" placeholder="Email" required="">           
+               <input type="text" name="subject" class="form-control input-field" placeholder="Perihal" required="">                     
+            </div>
+            <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Tulis pesan anda" required=""></textarea>
+            <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Kirim</button>
+         </div>
+   <!-- Contact results -->
+         <div id="contact_results"></div>
+      </div>
+      <!--/Contact form -->
+   </div>
+   <!-- /container-->
+</section>
+<!--Section ends -->
+
+{% endblock %}
+
+
+
+{% block foot %}
+	
+{% endblock %}

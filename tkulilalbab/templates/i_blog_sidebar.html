@@ -1,0 +1,59 @@
+<div class="sidebar col-md-3">
+
+   <!-- About us Widget -->
+
+   <div class="well">
+
+      <h4>Tentang Kami</h4>
+
+      <p>PG & TK Ulil Albab adalah lembaga pendidikan anak usia dini yang hadir dengan tujuan memberikan sistem pendidikan berkarakter dan berbudaya Islam rahmatan lil’alamiin. PG dan TK Ulil Albab berfokus pada upaya mempersiapkan generasi muslim yang unggul dalam ilmu, seni, dan budi pekerti.</p>
+
+      <!-- Social Media icons -->
+
+      <div class="social-media">
+
+         <a href="#" title=""><i class="fa fa-twitter"></i></a>
+
+         <a href="#" title=""><i class="fa fa-facebook"></i></a>
+
+         <a href="#" title=""><i class="fa fa-linkedin"></i></a>
+
+         <a href="#" title=""><i class="fa fa-pinterest"></i></a>
+
+         <a href="#" title=""><i class="fa fa-instagram"></i></a>
+
+      </div>
+
+   </div>
+
+   <div class="well">
+
+      <h4>Kategori</h4>
+
+      <div class="row">
+
+         <ul class="list-unstyled">
+         	{% for cat in categories %}
+				<li><a href="#">{{ cat.category}}</a></li>
+	        {% endfor %}
+
+         </ul>
+
+      </div>
+
+      <!-- /.row -->
+
+   </div>
+
+
+
+   <div class="well">
+
+      <div class="alert alert-warning">
+
+         <div class="glyph-icon flaticon-fruit"><strong> Membaca</strong> adalah jendela dunia.</div>
+
+      </div>
+
+   </div>
+</div>

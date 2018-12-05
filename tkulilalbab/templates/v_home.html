@@ -1,0 +1,913 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page %}
+Ulil Albab Yogyakarta - Play Group & Taman Kanak-Kanak
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Slider -->
+<div id="layerslider">
+  <!-- Slide 1 -->
+  <div class="ls-slide" data-ls="transition2d:104;timeshift:-2000;">
+  <!-- Background image -->
+    <img src="{{ slider_1.image.url }}" class="ls-bg"  alt="Slide background"/>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/sun.png" class="ls-l img-responsive hidden-xs hidden-sm parallax1" alt="" data-ls="delayin:1000;easingin:fadeIn;parallaxlevel:7;">
+    <!-- Text -->
+    <div class="ls-l header-text container" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;">
+      <h2>Selamat Datang di "ULIL ALBAB"</h2>
+      <p class="subtitle hidden-xs"> Kelompok Bermain dan Taman Kanak-Kanak </p>
+        <!-- Button -->
+      <div class="page-scroll hidden-xs">
+        <!-- <a class="btn" href="#contact">Contact us</a> -->
+      </div>
+    </div>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/flower.png" class="ls-l img-responsive hidden-xs hidden-sm parallax2" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:6;">
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="ls-slide" data-ls="transition2d:104;timeshift:-2000;">
+    <!-- Background image -->
+    <img src="{{ slider_2.image.url }}" class="ls-bg"  alt="Slide background"/>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/bee.png" class="ls-l img-responsive hidden-xs hidden-sm parallax1" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:7;">
+    <!-- Text -->
+    <div class="ls-l header-text"  data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;">
+      <h1>"Unggul Dalam Ilmu"</h1>
+      <p class="subtitle hidden-xs"> Membentuk generasi muslim yang cerdas Ilmu umum dan ilmu agama. </p>
+      <!-- Button -->
+      <div class="page-scroll hidden-xs">
+        <!-- <a class="btn" href="#contact">Contact us</a> -->
+      </div>
+    </div>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/star.png" class="ls-l img-responsive hidden-xs hidden-sm parallax2" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:6;">
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="ls-slide" data-ls="transition2d:104;timeshift:-2000;">
+    <!-- Background image -->
+    <img src="{{ slider_3.image.url }}" class="ls-bg"  alt="Slide background"/>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/sun.png" class="ls-l img-responsive hidden-xs hidden-sm parallax1" alt="" data-ls="delayin:1000;easingin:fadeIn;parallaxlevel:7;">
+    <!-- Text -->
+    <div class="ls-l header-text"  data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;">
+      <h1>"Unggul Dalam Seni"</h1>
+      <p class="subtitle hidden-xs"> Membentuk generasi muslim yang lembut dan humanis. </p>
+      <!-- Button -->
+      <div class="page-scroll hidden-xs">
+        <!-- <a class="btn" href="#contact">Contact us</a> -->
+      </div>
+    </div>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/flower.png" class="ls-l img-responsive hidden-xs hidden-sm parallax2" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:6;">
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="ls-slide" data-ls="transition2d:104;timeshift:-2000;">
+    <!-- Background image -->
+    <img src="{{ slider_4.image.url }}" class="ls-bg"  alt="Slide background"/>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/bee.png" class="ls-l img-responsive hidden-xs hidden-sm parallax1" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:7;">
+    <!-- Text -->
+    <div class="ls-l header-text" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;">
+      <h1>"Unggul Dalam Budi Pekerti"</h1>
+      <p class="subtitle hidden-xs"> Membentuk generasi muslim berakhlaqul karimah. </p>
+      <!-- Button -->
+      <div class="page-scroll hidden-xs">
+        <!-- <a class="btn" href="#contact">Contact us</a> -->
+      </div>
+    </div>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/star.png" class="ls-l img-responsive hidden-xs hidden-sm parallax2" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:6;">
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="ls-slide" data-ls="transition2d:104;timeshift:-2000;">
+    <!-- Background image -->
+    <img src="{{ slider_5.image.url }}" class="ls-bg"  alt="Slide background"/>
+    <!-- Video -->
+    <!-- <div class="ls-l video" data-ls="delayin:1500;easingin:fadeIn;">
+      <iframe width="760" height="475" src="#" allowfullscreen></iframe>
+    </div> -->
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/bee.png" class="ls-l img-responsive hidden-xs hidden-sm parallax1" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:7;">
+    <!-- Text -->
+    <div class="ls-l header-text" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;">
+      <h2>"BUNDA SANTRI"</h2>
+      <p class="subtitle hidden-xs"> BERSIH, UNGGUL, DISIPLIN, AKTIF, SANTUN, MANDIRI.</p>
+      <!-- Button -->
+      <div class="page-scroll hidden-xs">
+        <!-- <a class="btn" href="#contact">Contact us</a> -->
+      </div>
+    </div>
+    <!-- Parallax Image -->
+    <img src="{% static ''%}img/star.png" class="ls-l img-responsive hidden-xs hidden-sm parallax2" alt="" data-ls="delayin:1500;easingin:fadeIn;parallaxlevel:6;">
+  </div>
+</div>
+<!-- /Layerslider ends-->
+
+
+<div class="hidden-xs container-fluid cloud-divider">
+   <svg id="deco-clouds1" class="head" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M-5 100 Q 0 20 5 100 Z
+         M0 100 Q 5 0 10 100
+         M5 100 Q 10 30 15 100
+         M10 100 Q 15 10 20 100
+         M15 100 Q 20 30 25 100
+         M20 100 Q 25 -10 30 100
+         M25 100 Q 30 10 35 100
+         M30 100 Q 35 30 40 100
+         M35 100 Q 40 10 45 100
+         M40 100 Q 45 50 50 100
+         M45 100 Q 50 20 55 100
+         M50 100 Q 55 40 60 100
+         M55 100 Q 60 60 65 100
+         M60 100 Q 65 50 70 100
+         M65 100 Q 70 20 75 100
+         M70 100 Q 75 45 80 100
+         M75 100 Q 80 30 85 100
+         M80 100 Q 85 20 90 100
+         M85 100 Q 90 50 95 100
+         M90 100 Q 95 25 100 100
+         M95 100 Q 100 15 105 100 Z">
+      </path>
+   </svg>
+</div>
+<!-- / section ends-->
+
+
+
+<section id="about" class="color-section">
+ <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+       <!-- Section heading -->
+       <div class="section-heading">
+          <h2>Tentang Kami</h2>
+       </div>
+    </div>
+    <div class="row">
+	<!-- main text -->
+       <div class="col-md-12 col-lg-12 text-center">
+          <h3 class="text-center">Ulil Albab</h3>
+          <p>PG & TK Ulil Albab adalah lembaga pendidikan anak usia dini yang hadir dengan tujuan memberikan sistem pendidikan berkarakter dan berbudaya Islam rahmatan lil’alamiin. PG dan TK Ulil Albab berfokus pada upaya mempersiapkan generasi muslim  yang unggul dalam ilmu, seni, dan budi pekerti. Kami meyakini bahwa keunggulan dalam tiga aspek tersebut penting untuk membangun peradaban bangsa yang unggul dan berkemajuan.
+          </p>
+       </div>
+       <!-- /col-md-12-->
+    </div>
+    <!-- /row -->
+    <div class="row">
+       <!-- item 1-->
+       <div class="col-lg-offset-2 col-md-4 col-sm-12">
+          <div class="service float">
+             <img src="{% static ''%}img/tentangkami1.jpg" alt="" class="img-circle center-block img-responsive">
+             <h4>Kelompok Bermain</h4>
+             <p>KB A: Usia 2-3 th</p>
+             <p>KB B: Usia 3-4 th</p>
+              <p>Pendidikan untuk Kelompok Bermain menekankan pada pendekatan bermain sambil belajar yang menstimuli perkembangan kognitif, afektif, dan psikomotorik anak sehingga anak bisa tumbuh dan berkembang dengan baik.</p>
+          </div>
+       </div>
+       <!-- /col-md-4-->
+       <!-- item 2-->
+       <div class="col-md-4 col-sm-12 res-margin">
+          <div class="service float">
+             <img src="{% static ''%}img/tentangkami2.jpg" alt="" class="img-circle center-block  img-responsive">
+             <h4>Taman Kanak-Kanak</h4>
+             <p>TK A: Usia 4-5 th</p>
+             <p>TK B: Usia 5-6 th</p>
+             <p>Pendidikan untuk Taman Kanak-Kanak diarahkan pada pendekatan belajar sambil bermain yang menstimuli kemandirian, kreativitas, dan kecerdasan anak baik kecerdasan intelektual, emosional, dan spiritual. </p>
+          </div>
+       </div>
+    </div>
+    <!-- /row -->
+ </div>
+ <!-- /container-->
+</section>
+
+<!-- Section Callout -->
+<section id="callout" class="small-section">
+   <!-- Clouds background -->
+   <div class="hidden-xs">
+    <div class="cloud x1"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+    <div class="cloud x6"></div>
+    <div class="cloud x7"></div>
+   </div>
+   <!-- /Clouds ends -->
+   <div class="container" style="background-image: none;">
+      <!-- Animated Sun -->
+      <div class="sun hidden-sm hidden-xs">
+         <div class="sun-face">
+            <div class="sun-hlight"></div>
+            <div class="sun-leye"></div>
+            <div class="sun-reye"></div>
+            <div class="sun-lred"></div>
+            <div class="sun-rred"></div>
+            <div class="sun-smile"></div>
+         </div>
+         <!-- Sun rays -->
+         <div class="sun-anime">
+            <div class="sun-ball"></div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+            <div class="sun-light"><b></b><s></s>
+            </div>
+         </div>
+      </div>
+      <!-- /Animated Sun -->
+      <div class="col-md-10 col-sm-10 text-center">
+      <div class="well">
+             <h3>Visi</h3>
+             <p>Sebagai partner utama orang tua dalam mendidik dan menyiapkan anak menjadi insan ulil albab.</p>
+             <h3>Misi</h3>
+             <p>Menyelenggarakan pendidikan anak usia dini yang berkualitas dengan muatan nilai-nilai Islam yang rahmatan lil’alamiin.</p>
+             <p>Mengembangkan sistem pembelajaran anak usia dini yang kreatif, inovatif, dan berkarakter.</p>
+             <p>Menyiapkan generasi muslim yang unggul.</p>
+             
+       <!-- /page-scroll -->
+      </div>
+      <!-- /well -->
+      </div>
+      <!-- /col-md-6 -->
+   </div>
+   <!-- /container-->
+</section>
+<!-- Section Ends-->
+
+<!-- Section About -->
+<section id="about">
+   <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+         <!-- Section heading -->
+
+      </div>
+      <div class="row">
+         <div class="col-sm-12 col-lg-5">
+            <!-- Carousel -->
+            <div id="owl-about">
+               <div class="item">
+                  <img class="img-responsive" src="{% static ''%}img/about1.jpg" alt="">
+               </div>
+               <div class="item">
+                  <img class="img-responsive" src="{% static ''%}img/about2.jpg" alt="">
+               </div>
+            </div>
+         </div>
+         <!-- text -->
+         <div class="col-lg-7 col-sm-12">
+           
+            <h3>Kurikulum</h3>
+            <p>KB & TK Ulil Albab mengembangkan kurikulum yang mengintegrasikan kurikulum yang dikeluarkan pemerintah dengan kurikulum yang dikembangkan KB & TK Ulil Albab. Kurikulum KB & TK Ulil Albab berfokus pada tiga aspek, yaitu pengembangan ilmu, seni, dan budi pekerti. Di samping itu juga dikembangkan kurikulum pengayaan yaitu kurikulum entrepreneurship dan leadership.
+            </p>
+            <h3>BUDAYA ORGANISASI</h3>
+            <p>"Bersih; Unggul; Disiplin; Aktif; Santun; Mandiri"</p>
+            <p> Disingkat <strong>"BUNDA SANTRI"</strong></p>
+         </div>
+         <!-- /col-lg-8 -->
+      </div>
+      <!-- /row -->
+      
+      <!-- /row features -->
+      <div class="col-lg-12 col-sm-12 paper_block">
+         <h3 class="text-center">Testimoni Orang Tua</h3>
+         <div id="owl-testimonials" class="owl-carousel">
+
+            {% for testi in testimonials %}
+                 <blockquote>
+                  <div class="col-md-4 col-lg-4 col-centered">
+                     <!-- testimonial image-->
+                     <img src="{{ testi.picture.url }}" class="img-responsive img-circle">
+                  </div>
+                  <div class="col-md-10 col-md-offset-1 quote-test">
+                     <!-- quote -->
+                     <p>{{ testi.testimonial }}</p>
+                     <small><i class="fa fa-user"></i>{{ testi.name }}</small>
+                  </div>
+               </blockquote>
+            {% endfor %}
+                              
+            <!-- testimonial 2-->
+           
+         </div>
+         <!--owl testimonials-->
+      </div>
+      <!-- /col-lg-7 -->
+   </div>
+   <!--/container-->    
+</section>
+<!--/ Section ends -->
+
+<!-- Section activities -->
+<section id="activities">
+   <div class="container">
+      <!-- Section Heading -->
+      <div class="section-heading">
+         <h2>Kegiatan</h2>
+      </div>
+      <!--Navigation -->
+      <ul class="nav nav-tabs" id="myTab">
+         <li class="active"><a href="#tab1" data-toggle="tab">Menari</a></li>
+         <li><a href="#tab2" data-toggle="tab">Melukis</a></li>
+         <li><a href="#tab3" data-toggle="tab">Drumband</a></li>
+         <li><a href="#tab4" data-toggle="tab">English for Kids</a></li>
+         <li><a href="#tab5" data-toggle="tab">Iqra</a></li>
+      </ul>
+      <div class="tabbable">
+         <div class="tab-content col-md-12 col-centered">
+            <!--Tab Content 1 -->
+            <div class="tab-pane active in fade" id="tab1">
+               <div class="row">
+                  <div class="col-md-5 col-lg-5 pull-left">
+                     <!-- Activity image-->
+                     <img src="{% static ''%}img/activity1.jpg" alt="" class="img-responsive img-circle">            
+                  </div>
+                  <div class="col-md-7 col-lg-7 pull-left">
+                     <!-- Activity text-->
+                     <h3>• Menari</h3>
+                     <!-- Accordion -->
+                     <div class="panel-group" id="accordion">
+                        <!-- Question 1 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">• Deskripsi</a>
+                              </h6>
+                           </div>
+                           <div id="collapse1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <p>Menari merupakan ekstra wajib yang akan diberikan kepada murid TK. 
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 2 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">• Peserta</a>
+                              </h6>
+                           </div>
+                           <div id="collapse2" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra menari diwajibkan untuk murid TK A dan B
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 3 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">• Kapan</a>
+                              </h6>
+                           </div>
+                           <div id="collapse3" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra menari dilakukan sekali dalam satu minggu.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->           
+                     </div>
+                     <!-- /.accordion -->     
+                  </div>
+                  <!-- /.col-md-7 -->
+               </div>
+               <!-- /.row -->
+            </div>
+            <!-- /#tab1 --> 
+            <!--Tab Content 2 -->
+            <div class="tab-pane fade" id="tab2">
+               <div class="row">
+                  <div class="col-md-5 col-lg-5 pull-left">
+                     <!-- Activity image-->
+                     <img src="{% static ''%}img/activity2.jpg" alt="" class="img-responsive img-circle">            
+                  </div>
+                  <div class="col-md-7 col-lg-7 pull-left">
+                     <!-- Activity text-->
+                     <h3>• Melukis</h3>
+                     <!-- Accordion -->
+                     <div class="panel-group" id="accordion2">
+                        <!-- Question 1 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">• Deskripsi </a>
+                              </h6>
+                           </div>
+                           <div id="collapse4" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <p>Melukisi merupakan ekstra yang bersifat pilihan yang akan dibimbing oleh guru seni yang kreatif dan menyenangkan.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 2 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse5">• Peserta</a>
+                              </h6>
+                           </div>
+                           <div id="collapse5" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra melukis bisa diikuti oleh Kelompok Bermain dan Taman Kanak-Kanak.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 3 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse6">• Kapan</a>
+                              </h6>
+                           </div>
+                           <div id="collapse6" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra melukis dilakukan sekali dalam satu minggu.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->           
+                     </div>
+                     <!-- /.accordion -->     
+                  </div>
+                  <!-- /.col-md-7 -->
+               </div>
+               <!-- /.row -->
+            </div>
+            <!-- /#tab2 --> 
+            <!--Tab Content 3 -->
+            <div class="tab-pane fade" id="tab3">
+               <div class="row">
+                  <div class="col-md-5 col-lg-5 pull-left">
+                     <!-- Activity image-->
+                     <img src="{% static ''%}img/activity3.jpg" alt="" class="img-responsive img-circle">            
+                  </div>
+                  <div class="col-md-7 col-lg-7 pull-left">
+                     <!-- Activity text-->
+                     <h3>• Drumband</h3>
+                     <!-- Accordion -->
+                     <div class="panel-group" id="accordion3">
+                        <!-- Question 1 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse7">• Deskripsi</a>
+                              </h6>
+                           </div>
+                           <div id="collapse7" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <p>Drumband merupakan ekstra yang bersifat pilihan yang akan dibimbing oleh instruktur yang kompeten dalam membimbing drumband. 
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 2 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse8">• Peserta</a>
+                              </h6>
+                           </div>
+                           <div id="collapse8" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra drumband bisa diikuti oleh Taman Kanak-Kanak A dan B.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 3 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse9">• Kapan</a>
+                              </h6>
+                           </div>
+                           <div id="collapse9" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra drumband dilakukan sekali dalam satu minggu.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->           
+                     </div>
+                     <!-- /.accordion -->     
+                  </div>
+                  <!-- /.col-md-7 -->
+               </div>
+               <!-- /.row -->
+            </div>
+            <!-- /#tab3 --> 
+            <!--Tab Content 4 -->
+            <div class="tab-pane fade" id="tab4">
+               <div class="row">
+                  <div class="col-md-5 col-lg-5 pull-left">
+                     <!-- Activity image-->
+                     <img src="{% static ''%}img/activity4.jpg" alt="" class="img-responsive img-circle">            
+                  </div>
+                  <div class="col-md-7 col-lg-7 pull-left">
+                     <!-- Activity text-->
+                     <h3>• English for Kids</h3>
+                     <!-- Accordion -->
+                     <div class="panel-group" id="accordion4">
+                        <!-- Question 1 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapse10">• Deskripsi</a>
+                              </h6>
+                           </div>
+                           <div id="collapse10" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <p>English for Kids merupakan ekstra yang mengenalkan bahasa Inggris untuk anak-anak yang disampaikan dengan cara yang menyenangkan. 
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 2 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapse11">•  Peserta</a>
+                              </h6>
+                           </div>
+                           <div id="collapse11" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>English for Kids bisa diikuti oleh murid Taman Kanak-Kanak A dan B.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 3 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapse12">•  Kapan</a>
+                              </h6>
+                           </div>
+                           <div id="collapse12" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra english for Kids dilakukan dua kali dalam satu minggu.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->           
+                     </div>
+                     <!-- /.accordion -->     
+                  </div>
+                  <!-- /.col-md-7 -->
+               </div>
+               <!-- /.row -->
+            </div>
+            <!-- /#tab4 --> 
+            <!--Tab Content 5 -->
+            <div class="tab-pane fade" id="tab5">
+               <div class="row">
+                  <div class="col-md-5 col-lg-5 pull-left">
+                     <!-- Activity image-->
+                     <img src="{% static ''%}img/activity5.jpg" alt="" class="img-responsive img-circle">            
+                  </div>
+                  <div class="col-md-7 col-lg-7 pull-left">
+                     <!-- Activity text-->
+                     <h3>• Iqra’ </h3>
+                     <!-- Accordion -->
+                     <div class="panel-group" id="accordion5">
+                        <!-- Question 1 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapse13">• Deskripsi</a>
+                              </h6>
+                           </div>
+                           <div id="collapse13" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                 <p>Iqra’ merupakan program wajib yang bertujuan untuk membiasakan anak mengaji dan mengenalkan anak kepada Al Qur’an sejak dini  
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 2 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion5" href="#collapse14">•  Peserta</a>
+                              </h6>
+                           </div>
+                           <div id="collapse14" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Ekstra Iqra’  bisa diikuti oleh murid Taman Kanak-Kanak A dan B.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->
+                        <!-- Question 3 -->
+                        <div class="panel">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">
+                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion5" href="#collapse16">• Kapan</a>
+                              </h6>
+                           </div>
+                           <div id="collapse16" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <p>Setiap Hari
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/panel -->           
+                     </div>
+                     <!-- /.accordion -->     
+                  </div>
+                  <!-- /.col-md-7 -->
+               </div>
+               <!-- /.row -->
+            </div>
+            <!-- /#tab5 -->         
+         </div>
+         <!--tab-content-->  
+      </div>
+      <!--tababble--> 
+   </div>
+   <!-- /container -->
+</section>
+<!-- /Section ends -->
+
+
+<!-- Parallax object -->
+<div class="parallax-object3 hidden-sm hidden-xs" data-0="opacity:1;"
+   data-100="transform:translatex(0%);"
+   data-center-center="transform:translatex(380%);">
+   <!-- Image -->
+   <img src="{% static ''%}img/parallaxobject3.png" alt="">
+</div>
+
+<!-- Section Prices -->
+<section id="program" class="color-section">
+   <!-- svg triangle shape -->
+   <svg id="triangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path class="trianglePath1" d="M0 0 L50 100 L100 0 Z" />
+   </svg>
+   <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+         <!-- Section heading -->
+         <div class="section-heading">
+            <h2>Program</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12 text-center">
+
+            <div class="pricing pricing-palden">
+               <div class="pricing-item col-lg-3 col-md-3 col-sm-12">
+                  <div class="pricing-deco">
+                     <svg class="pricing-deco-img" enable-background='new 0 0 300 100' height='100px' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729&#x000A; c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729&#x000A;  c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716&#x000A;  H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+                        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A; c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+                     </svg>
+                    
+                     <h3 class="pricing-title">Reguler</h3>
+                  </div>
+                  
+                  <ul class="pricing-feature-list">
+                     <li><strong> Kelompok Bermain</strong></li>
+                     <li>Jum’at – Sabtu   : 07.30 s.d. 10.30</li>
+                  
+                     
+                  </ul>
+                  <!-- Button-->
+                  <div class="page-scroll">
+                     <a class="btn" href="#">Reguler</a>
+                  </div>
+                  <!--/page-scroll-->
+               </div>
+               <div class="pricing-item pricing-item-featured col-lg-3 col-md-3 col-sm-12">
+                  <div class="pricing-deco">
+                     <svg class="pricing-deco-img" enable-background='new 0 0 300 100' height='100px' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729&#x000A; c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729&#x000A;  c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716&#x000A;  H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+                        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A; c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+                     </svg>
+                   
+                     <h3 class="pricing-title">Half Day</h3>
+                  </div>
+                  <ul class="pricing-feature-list">
+                     <li><strong> Kelompok Bermain & Taman Kanak-Kanak</strong></li>
+                     <li>Senin – Jum’at: 07.30 – 13.00</li>
+
+                     <li>Sabtu: 07.30 – 10.30</li>
+                  </ul>
+                  <!-- Button-->
+                  <div class="page-scroll">
+                     <a class="btn" href="#">Half Day</a>
+                  </div>
+                  <!--/page-scroll-->
+               </div>
+               <div class="pricing-item col-lg-3 col-md-3 col-sm-12">
+                  <div class="pricing-deco">
+                     <svg class="pricing-deco-img" enable-background='new 0 0 300 100' height='100px' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729&#x000A; c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729&#x000A;  c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716&#x000A;  H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+                        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A; c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+                     </svg>
+                     
+                     <h3 class="pricing-title">Full Day</h3>
+                  </div>
+                  <ul class="pricing-feature-list">
+                     <li><strong> Kelompok Bermain & Taman Kanak-Kanak</strong></li>
+                     <li>Senin-Kamis: 7.30-15.00</li>
+                     <li>Jumat: 7.30-13.00</li>
+                     <li>Sabtu: 7.30-10.30 </li>
+                     
+                  </ul>
+                  <!-- Button-->
+                  <div class="page-scroll">
+                     <a class="btn" href="#">Full Day</a>
+                  </div>
+                  <!--/page-scroll-->
+               </div>
+               <div class="pricing-item pricing-item-featured col-lg-3 col-md-3 col-sm-12">
+                  <div class="pricing-deco">
+                     <svg class="pricing-deco-img" enable-background='new 0 0 300 100' height='100px' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729&#x000A; c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729&#x000A;  c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+                        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716&#x000A;  H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+                        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A; c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+                     </svg>
+                     
+                     <h3 class="pricing-title">Half Day</h3>
+                  </div>
+                  <ul class="pricing-feature-list">
+                     <li><strong> Kelompok Bermain & Taman Kanak-Kanak</strong></li>
+                     <li>Senin – Jum’at: 07.30 – 13.00</li>
+                     <li>Sabtu: 07.30 – 10.30</li>
+                     
+                  </ul>
+                  <!-- Button-->
+                  <div class="page-scroll">
+                     <a class="btn" href="#">Full Day</a>
+                  </div>
+                  <!--/page-scroll-->
+               </div>
+            </div>
+            <!-- /col-sm-12-->
+         </div>
+         <!-- /row -->        
+      </div>
+      <!-- /container-->
+   </div>
+</section>
+
+
+<!-- Section Call to Action -->
+<section id="call-to-action" class="small-section">
+   <div class="container text-center">
+      <div class="col-lg-6 col-lg-offset-6 col-sm-6">
+<div class="well">
+    
+         <!-- Section heading -->
+         <h3>Moto</h3>
+         <p>Unggul dalam ilmu, seni, dan budi pekerti</p>
+         <!-- Button -->
+     <div class="page-scroll">
+      <!-- <a class="btn" href="#about">About Us</a> -->
+     </div>
+     <!--/page-scroll -->
+   </div>
+   <!--/well -->
+      </div>
+      <!--/col-lg-6 -->
+   </div>
+   <!-- /container-->
+</section>
+<!-- Section ends -->
+
+
+<!-- Section Contact -->
+<section id="kontak" class="color-section">
+   <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+         <!-- Section heading -->
+         <div class="section-heading">
+            <h2>Hubungi Kami</h2>
+         </div>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 text-center">
+         <h4>Informasi</h4>  
+         <!-- contact info -->         
+         <div class="contact-info">
+         <p><i class="flaticon-back"></i><a href="mailto:youremailaddress">tkulilalbabyogya@gmail.com</a></p>
+     <p><i class="flaticon-back"></i><a href="mailto:youremailaddress">tkulilalbabyogyakarta@gmail.com</a></p>
+    <p><i class="fa fa-phone margin-icon"></i>Tlp, SMS & WhattsApp: 0813 2758 4440</p>
+   </div>
+            <!-- address info -->
+            <p>Jl. KH. Ali Maksum Km 2, Pandes, Panggungharjo, Sewon, Bantul, Yogyakarta 55188</p>
+          <!-- Map -->
+          <div id="map-canvas"></div>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-lg-7 col-lg-offset-1">
+         <h4>Tulis Pesan</h4>
+  <!-- Form Starts -->
+         <div id="contact_form">
+            <div class="form-group">
+               <input type="text" name="name" class="form-control input-field" placeholder="Nama" required="">                    
+               <input type="email" name="email" class="form-control input-field" placeholder="Email" required="">           
+               <input type="text" name="subject" class="form-control input-field" placeholder="Perihal" required="">                     
+            </div>
+            <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Tulis pesan anda" required=""></textarea>
+            <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Kirim</button>
+         </div>
+   <!-- Contact results -->
+         <div id="contact_results"></div>
+      </div>
+      <!--/Contact form -->
+   </div>
+   <!-- /container-->
+</section>
+<!--Section ends -->
+
+<div class="container-fluid cloud-divider">
+   <!-- Clouds SVG Divider -->  
+   <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M-5 100 Q 0 20 5 100 Z
+         M0 100 Q 5 0 10 100
+         M5 100 Q 10 30 15 100
+         M10 100 Q 15 10 20 100
+         M15 100 Q 20 30 25 100
+         M20 100 Q 25 -10 30 100
+         M25 100 Q 30 10 35 100
+         M30 100 Q 35 30 40 100
+         M35 100 Q 40 10 45 100
+         M40 100 Q 45 50 50 100
+         M45 100 Q 50 20 55 100
+         M50 100 Q 55 40 60 100
+         M55 100 Q 60 60 65 100
+         M60 100 Q 65 50 70 100
+         M65 100 Q 70 20 75 100
+         M70 100 Q 75 45 80 100
+         M75 100 Q 80 30 85 100
+         M80 100 Q 85 20 90 100
+         M85 100 Q 90 50 95 100
+         M90 100 Q 95 25 100 100
+         M95 100 Q 100 15 105 100 Z">
+      </path>
+   </svg>
+</div>
+{% endblock %}
+
+
+{% block foot %}
+ 
+	      <!-- Google maps -->
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3"></script> -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvoWTz83j2yNLk0iLzqF0Ho1wmlA60r2g"></script>
+{% endblock %}

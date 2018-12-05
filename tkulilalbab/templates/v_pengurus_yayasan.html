@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page %}
+Pengurus Yayasan Ulil Albab Yogyakarta - Play Group & Taman Kanak-Kanak
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+
+  <!-- Section Team -->
+  <section id="team" class="color-section">
+     <!-- svg triangle shape -->
+     <svg class="triangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="trianglePath1" d="M0 0 L50 100 L100 0 Z" />
+     </svg>
+     <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+           <!-- Section heading -->
+           <div class="section-heading">
+              <h2>Pengurus Yayasan & Guru</h2>
+           </div>
+        </div>
+        <!-- Intro text -->
+        <div class="row team">
+           <div class="col-lg-5 col-md-5 res-margin">
+              <!-- Intro image -->
+              <img src="{% static ''%}img/konsultan.jpg" class="center-block img-responsive img-curved" alt=""/>
+           </div>
+           <div class="col-lg-7 col-md-7">
+              <h3>Kepala Sekolah</h3>
+              <p>Usia 0-6 tahun adalah usia emas seorang anak. Pada masa itu, aspek kognitif, fisik, moral dan motorik anak berkembang sangat pesat. Sebagai orangtua kita pasti menginginkan anak kita tidak hanya pandai secara kognitif dan lincah atau aktif secara fisik, tetapi juga memiliki karakter dan budi pekerti yang luhur. Oleh karena itu, kami menghadirkan KB & TK Ulil Albab sebagai partner utama orangtua untuk mewujudkan generasi yang unggul dalam ilmu, seni dan budi pekerti. Kami menyadari, untuk pendidikan anak yang komprehensif diperlukan sinergi yang baik antara sekolah dan orangtua, maka kami menyediakan berbagai program unggulan di luar kurikulum kami, seperti kegiatan parenting, pertemuan rutin orangtua murid, konsultasi psikologi, dan pekan konsultasi perkembangan anak.  Semoga Ulil Albab dapat selalu menjaga kepercayaan orang tua dan semua pihak dalam mendidik generasi Ulil Albab yang akan menjadi harapan kita di masa mendatang. Aamiin.
+              </p>
+           </div>
+           <div class="col-lg-7 col-md-7"> 
+                  <h3>Tenaga Pengajar</h3>
+              <p>KB & TK Ulil Albab memiliki guru yang kompeten sesuai standar pendidikan nasional. Kepala Sekolah KB & TK Ulil Albab adalah Sarjana Psikologi alumni Universitas Indonesia (UI) Jakarta yang berpengalaman. Guru-guru KB & TK Ulil Albab merupakan sarjana D3 dan S1 yang berpengalaman di bidang pendidikan anak usia dini serta penyayang dan sabar dalam mendidik anak. 
+              </p>
+           </div>
+        </div>
+
+
+
+
+        <!-- Team Carousel-->
+
+
+
+        <div id="owl-team" class="owl-carousel">
+        	{% for guru in gurus %}
+
+        		<div class="col-lg-12">
+                 <!-- member 1-->
+                 <div class="team-item">
+                    <img src="{{ guru.picture.url }}" alt=""/>
+                    <div class="team-caption">
+                       <h8 class="text-light">{{ guru.name }}</h8>
+                       <p>Guru</p>
+                    </div>
+                 </div>
+                 <!-- /team-item-->
+              </div>
+        	{% endfor %}
+        </div>
+        <!--/owl-team -->	
+     </div>
+     <!--/container -->
+  </section>
+      <!-- Section ends -->
+
+
+
+<section id="contact" class="color-section">
+         <div class="container">
+            <div class="col-lg-12">
+               	<!-- Section heading -->
+               	<div class="section-heading">
+                  <h2>YAYASAN BINA INSAN ULIL ALBAB YOGYAKARTA</h2>
+               	</div>
+               	<center>
+               		 <img src="{% static '' %}img/yayasan.png" alt="">
+               	<p>Yayasan Bina Insan Ulil Albab Yogyakarta merupakan organisasi nonprofit yang bergerak di bidang pendidikan, sosial, dan kemanusiaan. Yayasan Bina Insan Ulil Albab didirikan pada tahun 2017 berdasarkan Akta Notaris No. 01 Tanggal 09 Agustus 2017 yang dibuat oleh Notaris Neneng, SH., M.KN. Yayasan Bina Insan Ulil Albab Yogyakarta juga telah mendapatkan pengesahan sebagai badan hukum dari Menteri Hukum dan Hak Asasi Manusia Republik Indonesia berdasarkan Keputusan MENKUMHAM No. AHU-0012301.AH.01.04 Tahun 2017.  </p>
+            	</center>
+            </div>
+            <!-- Contact -->
+            <!-- Contact Form -->
+            <div class="col-lg-4">
+               <h4>Visi</h4>
+               <p>Mendidik dan menyiapkan generasi bangsa menjadi insan-insan Ulil Albab yang cerdas, terampil, berbudaya, dan berakhlak mulia.</p>
+            </div>
+            <div class="col-lg-4">
+               <h4>Misi</h4>
+               <p>Misi Yayasan Ulil Bina Insan Albab adalah:</p>
+               <ol>
+               	<li>Mengembangkan lembaga pendidikan yang bermutu </li>
+               	<li>Mengembangkan amal usaha sosial yang dapat meningkatkan derajat, harkat, dan martabat masyarakat  </li>
+               </ol>
+            </div>
+             <div class="col-lg-4">
+               <h4>Tujuan</h4>
+               <p>Tujuan Yayasan Bina Insan Ulil Albab adalah:</p>
+               <ol>
+               	<li>Meningkatkan kualitas sumber daya manusia (SDM) melalui penyediaan pendidikan yang berkualitas </li>
+               	<li>Membina generasi bangsa menjadi insan ulil albab yang cerdas, bertaqwa, berbudaya, berbudi pekerti luhur, berpengetahuan luas, cakap dan terampil. </li>
+               	<li>Meningkatkan kesejahteraan sosial-ekonomi umat melalui pemberdayaan amal usaha sosial.</li>
+               </ol>
+            </div>
+            <div class="col-lg-12 text-center">
+            	<h4>Kegiatan Yayasan</h4>
+            	<p>Untuk mencapai visi, misi, dan tujuan, Yayasan Bina Insan Ulil Albab Yogyakarta melakukan amal usaha, meliputi menyelenggarakan lembaga pendidikan formal maupun nonformal yang menjadi unit pendidikan Yayasan. Saat ini, Yayasan Bina Insan Ulil Albab Yogyakarta menaungi sekolah TK Ulil Albab Yogyakarta. Yayasan juga mengadakan amal usaha lainnya yang bermanfaat bagi Yayasan dan masyarakat.</p>
+            </div>
+            <div class="col-lg-12">
+            	<h4>Pengurus Yayasan</h4>
+            	
+            	<center>
+            	<p>Susunan Pengurus Yayasan Bina Insan Ulil Albab adalah sebagai berikut:</p>
+            	<div>
+            		<table>
+            		<tbody><tr>
+            			<td>Penasehat</td>
+            			<td>: Drs. H. Hardjono, M.Sc.</td>
+            		</tr>
+            		<tr>
+            			<td>Pengawas</td>
+            			<td>: Agung Purnawarman, SE., Ak. </td>
+            		</tr>
+            		<tr>
+            			<td>Dewan Pengurus:</td>
+            		</tr>
+            		<tr>
+            			<td>Ketua</td>
+            			<td>: Dr. H. Mahmudi, SE., M.Si., Ak., CA., CMA</td>
+            		</tr>
+            		<tr>
+            			<td>Sekretaris</td>
+            			<td>: Ny. Hj. Sugiharti</td>
+            		</tr>
+            		<tr>
+            			<td>Bendahara</td>
+            			<td>: Hj. Dian Utami, SE.</td>
+            		</tr>
+            		
+            	</tbody></table>
+            	
+            	</div>	
+            	</center>
+            	
+            </div>
+
+            <!--/Contact form -->
+         </div>
+         <!-- /container-->
+      </section>
+
+
+
+
+<!-- Section Contact -->
+<section id="kontak" class="color-section" style="display: none; ">
+   <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+         <!-- Section heading -->
+         <div class="section-heading">
+            <h2>Hubungi Kami</h2>
+         </div>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 text-center">
+         <h4>Informasi</h4>  
+         <!-- contact info -->         
+         <div class="contact-info">
+         <p><i class="flaticon-back"></i><a href="mailto:youremailaddress">tkulilalbabyogya@gmail.com</a></p>
+     <p><i class="flaticon-back"></i><a href="mailto:youremailaddress">tkulilalbabyogyakarta@gmail.com</a></p>
+    <p><i class="fa fa-phone margin-icon"></i>Tlp, SMS & WhattsApp: 0813 2758 4440</p>
+   </div>
+            <!-- address info -->
+            <p>Jl. KH. Ali Maksum Km 2, Pandes, Panggungharjo, Sewon, Bantul, Yogyakarta 55188</p>
+          <!-- Map -->
+          <div id="map-canvas"></div>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-lg-7 col-lg-offset-1">
+         <h4>Tulis Pesan</h4>
+  <!-- Form Starts -->
+         <div id="contact_form">
+            <div class="form-group">
+               <input type="text" name="name" class="form-control input-field" placeholder="Nama" required="">                    
+               <input type="email" name="email" class="form-control input-field" placeholder="Email" required="">           
+               <input type="text" name="subject" class="form-control input-field" placeholder="Perihal" required="">                     
+            </div>
+            <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Tulis pesan anda" required=""></textarea>
+            <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Kirim</button>
+         </div>
+   <!-- Contact results -->
+         <div id="contact_results"></div>
+      </div>
+      <!--/Contact form -->
+   </div>
+   <!-- /container-->
+</section>
+<!--Section ends -->
+
+
+
+
+{% endblock %}
+
+
+{% block foot %}
+		      <!-- Google maps -->
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3"></script> -->
+
+{% endblock %}
